@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contacto</title>
+  <link rel="icon" href="/imagenes/logo.jpg" type="image/x-icon">
+  <link rel="stylesheet" href="css/contacto.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="navbar">
+      <img src="/imagenes/logo.jpg" alt="VitaGas Logo" class="logo">
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="productos.html">Productos</a></li>
+          <li><a href="contacto.html" class="active">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!-- Redes sociales -->
+  <div class="social-bar">
+    <a href="#" class="icon facebook"><i class="fab fa-facebook-f"></i></a>
+    <a href="#" class="icon instagram"><i class="fab fa-instagram"></i></a>
+    <a href="https://wa.me/51946928520" class="icon whatsapp"><i class="fab fa-whatsapp"></i></a>
+  </div>
+
+
+  <!-- Sección contacto -->
+  <section class="contacto-section">
+    <div class="info-contacto">
+      <h2>Contáctanos</h2>
+      <ul>
+        <li><i class="fas fa-map-marker-alt"></i> Dirección: Calle Salvador Peña 251, Pueblo Nuevo</li>
+        <li><i class="fas fa-envelope"></i> Email: vitagas@gmail.com</li>
+        <li><i class="fas fa-phone-alt"></i> Teléfono: 946 928 520</li>
+        <li><i class="fas fa-phone-alt"></i> Teléfono: 963 122 565</li>
+        <li><i class="fas fa-mobile-alt"></i> WhatsApp: 946 928 520</li>
+      </ul>
+    </div>
+
+    <div class="formulario-contacto">
+      <h2>Escríbenos</h2>
+      <form action="https://formspree.io/f/xovepgep" method="POST">
+        <input type="text" name="nombre" placeholder="Tu nombre completo" required>
+        <input type="email" name="email" placeholder="Tu correo electrónico" required>
+        <input type="tel" name="telefono" placeholder="Tu número de celular">
+        <textarea name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
+        <button type="submit">Enviar mensaje</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Mapa de Google -->
+  <section class="mapa-section">
+    <h2>Visítanos</h2>
+    <!-- Incrustamos el mapa de Google usando un iframe -->
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.049187554359!2d-79.80091352558419!3d-6.640814364917304!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x904c94cda902dde9%3A0x5b1734e4c1a79c7f!2sCalle%20Salvador%20Pe%C3%B1a%20251%2C%20Ferre%C3%B1afe%2014311!5e0!3m2!1ses-419!2spe!4v1744144699126!5m2!1ses-419!2spe"
+     width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </section>
+
+  !-- Icono de Anuncio -->
+<div id="icono-anuncio" class="icono-anuncio">
+  <i class="fas fa-bullhorn"></i>
+</div>
+
+<!-- Modal de Promoción -->
+<div id="modal-promocion" class="modal">
+  <div class="modal-contenido">
+    <h2>¡Promoción Especial!</h2>
+    
+    
+    <!-- Imagen promocional -->
+    <img src="imagenes/abastecimiento.jpg" alt="Promoción Especial" class="promo-img">
+    
+    <a href="https://wa.me/51941156297?text=Hola%2C%20quiero%20aprovechar%20la%20promoci%C3%B3n%20de%20VitaGas" ></a>
+    
+    <span id="cerrar-modal" class="cerrar-modal">&times;</span>
+  </div>
+</div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="central-pedidos">
+      <p><i class="fas fa-phone-volume"></i> Central de Pedidos:946 928 520</p>
+      <p>&copy; 2025 VitaGas Perú. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+  <script src="script1.js"></script>
+</body>
+</html>
